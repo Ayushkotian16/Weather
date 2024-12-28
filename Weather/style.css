@@ -1,0 +1,131 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Container */
+body {
+    background: linear-gradient(to bottom, #6ec1e4, #eff9fc);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: max-height 0.5s ease; /* Animation for height change */
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    color: #4a90e2;
+}
+
+/* Search Container */
+.search-container {
+    margin: 15px 0;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background: #f7f7f7;
+}
+
+.input-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.search {
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background: transparent;
+}
+
+/* Weather Info Section */
+.weather-info {
+    margin: 20px 0;
+}
+
+.location-container {
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 1.2rem;
+    font-weight: bold;
+ color: #333;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.cel {
+    font-size: 1.5rem;
+    color: #4a90e2;
+}
+
+/* Wind and Humidity Section */
+.wind-humidity {
+    display: flex;
+    flex-direction: column; /* Stack wind and humidity vertically */
+    align-items: center; /* Center the items */
+    margin-top: 20px; /* Add some space above */
+}
+
+.wind, .humidity {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; /* Space between wind and humidity */
+}
+
+.wind-icon, .humidity-icon {
+    width: 20px; /* Set width for icons */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Invalid Input Message */
+.invalid-input {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
